@@ -78,7 +78,7 @@ export default function Ambassador() {
                 Designation,
               } = data;
               return (
-                <div key={item.Sl} className="col-sm-6 col-md-6 py-2">
+                <div key={item.Sl} className="col-md-6 col-lg-6 p-2">
                   <div className="card shadow-sm border-0 p-2 h-100">
                     <div className="d-flex flex-column flex-lg-row gap-4 align-items-center">
                       <div className="">
@@ -88,139 +88,141 @@ export default function Ambassador() {
                           alt=""
                         />
                       </div>
-                      <div className="">
-                        <div className="d-flex">
-                          <ul
-                            style={{
-                              width: 120,
-                              fontSize: 14,
-                              color: "#166060",
-                            }}
-                          >
-                            <li>Name :</li>
-                          </ul>
-                          <ul
-                            style={{
-                              fontSize: 14,
-                              color: "#166060",
-                            }}
-                          >
-                            <li>{item.NameTeacher}</li>
-                          </ul>
-                        </div>
-                        <div className="d-flex">
-                          <ul
-                            style={{
-                              width: 120,
-                              fontSize: 14,
-                              color: "#166060",
-                            }}
-                          >
-                            <li>Designation :</li>
-                          </ul>
-                          <ul
-                            style={{
-                              fontSize: 14,
-                              color: "#166060",
-                            }}
-                          >
-                            <li>{item.Designation}</li>
-                          </ul>
-                        </div>
-                        <div className="d-flex">
-                          <ul
-                            style={{
-                              width: 120,
-                              fontSize: 14,
-                              color: "#166060",
-                            }}
-                          >
-                            <li>Institution :</li>
-                          </ul>
-                          <ul
-                            style={{
-                              fontSize: 14,
-                              color: "#166060",
-                            }}
-                          >
-                            <li>{item.NameOfInstitute}</li>
-                          </ul>
-                        </div>
-                        <div className="d-flex">
-                          <ul
-                            style={{
-                              width: 120,
-                              fontSize: 14,
-                              color: "#166060",
-                            }}
-                          >
-                            <li>District :</li>
-                          </ul>
-                          <ul
-                            style={{
-                              fontSize: 14,
-                              color: "#166060",
-                            }}
-                          >
-                            <li>{item.NameDistrict}</li>
-                          </ul>
-                        </div>
-                        <div className="d-flex">
-                          <ul
-                            style={{
-                              width: 120,
-                              fontSize: 14,
-                              color: "#166060",
-                            }}
-                          >
-                            <li>PDS NO :</li>
-                          </ul>
-                          <ul
-                            style={{
-                              fontSize: 14,
-                              color: "#166060",
-                            }}
-                          >
-                            <li>{item.PdsNo}</li>
-                          </ul>
-                        </div>
-                        <div className="d-flex">
-                          <ul
-                            style={{
-                              width: 120,
-                              fontSize: 14,
-                              color: "#166060",
-                            }}
-                          >
-                            <li>Mobile :</li>
-                          </ul>
-                          <ul
-                            style={{
-                              fontSize: 14,
-                              color: "#166060",
-                            }}
-                          >
-                            <li>{item.MobileNo}</li>
-                          </ul>
-                        </div>
-                        <div className="d-flex">
-                          <ul
-                            style={{
-                              width: 120,
-                              fontSize: 14,
-                              color: "#166060",
-                            }}
-                          >
-                            <li>Email :</li>
-                          </ul>
-                          <ul
-                            style={{
-                              fontSize: 14,
-                              color: "#166060",
-                            }}
-                          >
-                            <li>{item.EmailId}</li>
-                          </ul>
+                      <div className="px-2 d-flex justify-content-center">
+                        <div>
+                          <div className="d-flex">
+                            <ul
+                              style={{
+                                width: 120,
+                                fontSize: 14,
+                                color: "#166060",
+                              }}
+                            >
+                              <li>Name :</li>
+                            </ul>
+                            <ul
+                              style={{
+                                fontSize: 14,
+                                color: "#166060",
+                              }}
+                            >
+                              <li>{item.NameTeacher}</li>
+                            </ul>
+                          </div>
+                          <div className="d-flex">
+                            <ul
+                              style={{
+                                width: 120,
+                                fontSize: 14,
+                                color: "#166060",
+                              }}
+                            >
+                              <li>Designation :</li>
+                            </ul>
+                            <ul
+                              style={{
+                                fontSize: 14,
+                                color: "#166060",
+                              }}
+                            >
+                              <li>{item.Designation}</li>
+                            </ul>
+                          </div>
+                          <div className="d-flex">
+                            <ul
+                              style={{
+                                width: 120,
+                                fontSize: 14,
+                                color: "#166060",
+                              }}
+                            >
+                              <li>Institution :</li>
+                            </ul>
+                            <ul
+                              style={{
+                                fontSize: 12,
+                                color: "#166060",
+                              }}
+                            >
+                              <li>{item.NameOfInstitute}</li>
+                            </ul>
+                          </div>
+                          <div className="d-flex">
+                            <ul
+                              style={{
+                                width: 120,
+                                fontSize: 14,
+                                color: "#166060",
+                              }}
+                            >
+                              <li>District :</li>
+                            </ul>
+                            <ul
+                              style={{
+                                fontSize: 14,
+                                color: "#166060",
+                              }}
+                            >
+                              <li>{item.NameDistrict}</li>
+                            </ul>
+                          </div>
+                          <div className="d-flex">
+                            <ul
+                              style={{
+                                width: 120,
+                                fontSize: 14,
+                                color: "#166060",
+                              }}
+                            >
+                              <li>PDS NO :</li>
+                            </ul>
+                            <ul
+                              style={{
+                                fontSize: 14,
+                                color: "#166060",
+                              }}
+                            >
+                              <li>{item.PdsNo}</li>
+                            </ul>
+                          </div>
+                          <div className="d-flex">
+                            <ul
+                              style={{
+                                width: 120,
+                                fontSize: 14,
+                                color: "#166060",
+                              }}
+                            >
+                              <li>Mobile :</li>
+                            </ul>
+                            <ul
+                              style={{
+                                fontSize: 14,
+                                color: "#166060",
+                              }}
+                            >
+                              <li>{item.MobileNo}</li>
+                            </ul>
+                          </div>
+                          <div className="d-flex">
+                            <ul
+                              style={{
+                                width: 120,
+                                fontSize: 14,
+                                color: "#166060",
+                              }}
+                            >
+                              <li>Email :</li>
+                            </ul>
+                            <ul
+                              style={{
+                                fontSize: 14,
+                                color: "#166060",
+                              }}
+                            >
+                              <li>{item.EmailId}</li>
+                            </ul>
+                          </div>
                         </div>
                       </div>
                     </div>
