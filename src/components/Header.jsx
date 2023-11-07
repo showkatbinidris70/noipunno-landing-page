@@ -33,26 +33,22 @@ export default function Header() {
                   >
                     <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
                       <li className="nav-item">
-                        <a
-                          className="nav-link active"
-                          aria-current="page"
-                          href="/"
-                        >
+                        <a className="nav-link active" aria-current="page">
                           <Link to="/">Home</Link>
                         </a>
                       </li>
                       <li className="nav-item">
-                        <a className="nav-link" href="/#about">
+                        <a className="nav-link">
                           <Link to="/about">About</Link>
                         </a>
                       </li>
                       <li className="nav-item">
-                        <a className="nav-link" href="/ambassador.html">
+                        <a className="nav-link">
                           <Link to="/ambassador">Ambassador</Link>
                         </a>
                       </li>
                       <li className="nav-item">
-                        <a className="nav-link" href="/faq.html">
+                        <a className="nav-link">
                           <Link to="/faq">FAQ</Link>
                         </a>
                       </li>
@@ -62,7 +58,7 @@ export default function Header() {
                         </a>
                       </li> */}
                       <li className="nav-item">
-                        <a className="nav-link" href="/#contact">
+                        <a className="nav-link">
                           <Link to="/contact">Contact</Link>
                         </a>
                       </li>
