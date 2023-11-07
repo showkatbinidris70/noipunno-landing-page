@@ -15,9 +15,12 @@ export default function FAQ() {
             <div className="d-flex justify-content-center">
               <div className="col-12">
                 <ul className="nav d-flex justify-content-center">
-                  <li className="nav-item h-100" style={{ minWidth: 280 }}>
+                  <li
+                    className="nav-item h-100"
+                    style={{ minWidth: 280 }}
+                  >
                     <a
-                      className="nav-link link-secondary active"
+                      className="nav-link link-secondary"
                       id="general-tab"
                       data-bs-toggle="tab"
                       data-bs-target="#general"

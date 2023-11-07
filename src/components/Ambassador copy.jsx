@@ -1,23 +1,30 @@
 import React, { useEffect, useState } from "react";
 import AmbassadorImg from "../assets/images/ambassador.jpg";
-import data from "../data.json";
+import Data from "../data.json";
 
 export default function Ambassador() {
-  const [searchTerm, setSearchTerm] = useState("");
-  const [filteredData, setFilteredData] = useState(data);
-
-  const handleInputChange = (event) => {
-    const { value } = event.target;
-    setSearchTerm(value);
-    filterData(value);
+  const [ambassadors, setAmbassador] = useState([]);
+  const getData = async () => {
+    await fetch("mydata.json")
+      .then((res) => res.json())
+      .then((data) => setAmbassador(data));
   };
 
-  const filterData = (searchTerm) => {
-    const filteredData = data.filter((item) =>
-      item.NameDistrict.toLowerCase().includes(searchTerm.toLowerCase())
+  useEffect(() => {
+    getData();
+  }, []);
+  // console.log(Data);
+
+  const handleSearch = (event) => {
+    event.preventDefault();
+    const form = event.target;
+    const searchDistric = form.distic_name.value;
+    const currentDistric = ambassadors.filter(
+      (data) => data.NameDistrict === searchDistric
     );
-    setFilteredData(filteredData);
+    setAmbassador(currentDistric);
   };
+
   return (
     <div>
       <section
@@ -43,14 +50,16 @@ export default function Ambassador() {
               <div className="">
                 <div className="d-flex">
                   <div className="my-2">
-                    <form className="form-inline my-2 my-lg-0 d-flex">
+                    <form
+                      onSubmit={handleSearch}
+                      className="form-inline my-2 my-lg-0 d-flex"
+                    >
                       <input
                         className="form-control mr-sm-2"
                         type="search"
                         placeholder="Search"
                         aria-label="Search"
-                        value={searchTerm}
-                        onChange={handleInputChange}
+                        name="distic_name"
                       />
                       <button
                         className="btn btn-outline-success my-2 my-sm-0"
@@ -65,7 +74,7 @@ export default function Ambassador() {
             </div>
           </div>
           <div className="row">
-            {filteredData.map((item) => {
+            {ambassadors.map((data, index) => {
               const {
                 Sl,
                 NameTeacher,
@@ -78,7 +87,7 @@ export default function Ambassador() {
                 Designation,
               } = data;
               return (
-                <div key={item.Sl} className="col-sm-6 col-md-6 py-2">
+                <div key={index} className="col-sm-6 col-md-6 py-2">
                   <div className="card shadow-sm border-0 p-2 h-100">
                     <div className="d-flex flex-column flex-lg-row gap-4 align-items-center">
                       <div className="">
@@ -105,7 +114,7 @@ export default function Ambassador() {
                               color: "#166060",
                             }}
                           >
-                            <li>{item.NameTeacher}</li>
+                            <li>{NameTeacher}</li>
                           </ul>
                         </div>
                         <div className="d-flex">
@@ -124,7 +133,7 @@ export default function Ambassador() {
                               color: "#166060",
                             }}
                           >
-                            <li>{item.Designation}</li>
+                            <li>{Designation}</li>
                           </ul>
                         </div>
                         <div className="d-flex">
@@ -143,7 +152,7 @@ export default function Ambassador() {
                               color: "#166060",
                             }}
                           >
-                            <li>{item.NameOfInstitute}</li>
+                            <li>{NameOfInstitute}</li>
                           </ul>
                         </div>
                         <div className="d-flex">
@@ -162,7 +171,7 @@ export default function Ambassador() {
                               color: "#166060",
                             }}
                           >
-                            <li>{item.NameDistrict}</li>
+                            <li>{NameDistrict}</li>
                           </ul>
                         </div>
                         <div className="d-flex">
@@ -181,7 +190,7 @@ export default function Ambassador() {
                               color: "#166060",
                             }}
                           >
-                            <li>{item.PdsNo}</li>
+                            <li>{PdsNo}</li>
                           </ul>
                         </div>
                         <div className="d-flex">
@@ -200,7 +209,7 @@ export default function Ambassador() {
                               color: "#166060",
                             }}
                           >
-                            <li>{item.MobileNo}</li>
+                            <li>{MobileNo}</li>
                           </ul>
                         </div>
                         <div className="d-flex">
@@ -219,7 +228,7 @@ export default function Ambassador() {
                               color: "#166060",
                             }}
                           >
-                            <li>{item.EmailId}</li>
+                            <li>{EmailId}</li>
                           </ul>
                         </div>
                       </div>

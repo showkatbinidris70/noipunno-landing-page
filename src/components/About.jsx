@@ -14,10 +14,7 @@ export default function About() {
                     <div className="col-md-4 text-center">
                         <div className="about-single-item">
                             <div className="about-single-icon cta about_bg_icon1">
-                                <span style={
-                                    // {background: "url(./assets/home2-about-icon1.png)"}
-                                    {background: "url(../../../assets/images/home2-about-icon1.png)"}
-                                }/>
+                                <span className='about_bg_icon_1'/>
                             </div>
                             <div className="about-single-content">
                                 <h4>24/7 Support</h4>
@@ -31,9 +28,7 @@ export default function About() {
                     <div className="col-md-4 text-center">
                         <div className="about-single-item">
                             <div className="about-single-icon">
-                                <span style={
-                                    {background: "url(./src/home2-about-icon2.png)"}
-                                }/>
+                            <span className='about_bg_icon_2'/>
                             </div>
                             <div className="about-single-content">
                                 <h4>Data Privacy</h4>
@@ -47,9 +42,7 @@ export default function About() {
                     <div className="col-md-4 text-center">
                         <div className="about-single-item">
                             <div className="about-single-icon">
-                                <span style={
-                                    {background: "url(./src/home2-about-icon3.png)"}
-                                }/>
+                            <span className='about_bg_icon_3'/>
                             </div>
                             <div className="about-single-content">
                                 <h4>24 / 7 Call Center</h4>
