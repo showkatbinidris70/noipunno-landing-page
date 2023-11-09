@@ -6575,6 +6575,9 @@ body.home4 .home4-hero-mobile,
 .slick-dots li.slick-active button {
   background-color: red !important;
 }
+.slick-list {
+  margin-bottom: 20px !important;
+}
 
 /* slider end */
 
