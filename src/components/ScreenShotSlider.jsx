@@ -75,7 +75,7 @@ export default function ScreenShotSlider() {
           </div>
           <div className="row mt-3">
             <Slider {...settings}>
-              <div className="">
+              <div className="d-flex justify-content-center">
                 <div
                   className="owl-item active cloned d-flex justify-content-center"
                   style={{
@@ -95,7 +95,7 @@ export default function ScreenShotSlider() {
                   </div>
                 </div>
               </div>
-              <div className="">
+              <div className="d-flex justify-content-center">
                 <div
                   className="owl-item active cloned d-flex justify-content-center"
                   style={{
@@ -115,7 +115,7 @@ export default function ScreenShotSlider() {
                   </div>
                 </div>
               </div>
-              <div className="">
+              <div className="d-flex justify-content-center">
                 <div
                   className="owl-item active cloned d-flex justify-content-center"
                   style={{
@@ -135,7 +135,7 @@ export default function ScreenShotSlider() {
                   </div>
                 </div>
               </div>
-              <div className="">
+              <div className="d-flex justify-content-center">
                 <div
                   className="owl-item active cloned d-flex justify-content-center"
                   style={{
@@ -155,7 +155,7 @@ export default function ScreenShotSlider() {
                   </div>
                 </div>
               </div>
-              <div className="">
+              <div className="d-flex justify-content-center">
                 <div
                   className="owl-item active cloned d-flex justify-content-center"
                   style={{
@@ -175,7 +175,7 @@ export default function ScreenShotSlider() {
                   </div>
                 </div>
               </div>
-              <div className="">
+              <div className="d-flex justify-content-center">
                 <div
                   className="owl-item active cloned d-flex justify-content-center"
                   style={{
